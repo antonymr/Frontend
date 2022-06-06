@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function (event){
     let form = document.getElementById("form_register")
     form.addEventListener("submit", function(event){
-        //event.preventDefault();
+        event.preventDefault();
         let cant_submit = true;
         var input_name = document.querySelector("#input_name");
         if (empty_validate(input_name, "#name_container", "EL nombre")){
@@ -23,10 +23,15 @@ window.addEventListener("DOMContentLoaded", function (event){
             cant_submit = false
         }
 
-        var input_ci = document.querySelector("#input_ci");
-        if (empty_validate(input_ci, "#ci_container", "La cedula")){
-            if (input_ci.value.length != 10 || isNaN(input_ci.value)){
-                document.querySelector("#ci_container .input_error").innerHTML = 'La cedula debe tener 10 caracteres numericos'
+        var input_identifier_type = document.querySelector("#identifier_type");
+        var input_identifier = document.querySelector("#input_identifier");
+        if (empty_validate(input_identifier, "#identifier_container", "La cedula")){
+            if ((input_identifier.value.length != 10 || isNaN(input_identifier.value)) && input_identifier_type.value == 'ci'){
+                document.querySelector("#identifier_container .input_error").innerHTML = 'La cedula debe tener 10 caracteres numericos'
+                cant_submit = false
+            }
+            if ((input_identifier.value.length != 13 || isNaN(input_identifier.value)) && input_identifier_type.value == 'ruc'){
+                document.querySelector("#identifier_container .input_error").innerHTML = 'El RUC debe tener 13 caracteres numericos'
                 cant_submit = false
             }
         }else{

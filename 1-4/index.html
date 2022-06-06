@@ -22,14 +22,23 @@
                 <input type="text" name="last_name" placeholder="Apellido" id="input_last_name" class="input">
                 <p class="input_error"></p>
             </div>
-            <div id="ci_container" class="input_container">
-                <label for="input_ci">Cedula: </label>
-                <input type="text" name="ci" placeholder="Apellido" id="input_ci" class="input">
+            <div id="identifier_type_container" class="input_container">
+                <label for="input_identifier_type">Tipo de Identificador: </label>
+                <select name="identifier_type" id="identifier_type">
+                    <option value="ci">Cedula</option>
+                    <option value="ruc">RUC</option>
+                </select>
+                <p class="input_error"></p>
+                
+            </div>
+            <div id="identifier_container" class="input_container">
+                <label for="input_identifier">Identificador: </label>
+                <input type="text" name="input_identifier" placeholder="000000000" id="input_identifier" class="input">
                 <p class="input_error"></p>
             </div>
             <div id="email_container" class="input_container">
                 <label for="input_email">Email: </label>
-                <input type="text" name="email" placeholder="Email" id="input_email" class="input">
+                <input type="text" name="email" placeholder="ejemplo@ejemplo.com" id="input_email" class="input">
                 <p class="input_error"></p>
             </div>
 

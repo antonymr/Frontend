@@ -1,0 +1,17 @@
+{
+  "name": "1-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:init": "tsc --init",
+    "prod": "tsc && node dist/src/hola.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}

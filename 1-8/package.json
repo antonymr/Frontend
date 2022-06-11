@@ -1,16 +1,17 @@
 {
-  "name": "1-7",
+  "name": "1-8",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
     "tsc:init": "tsc --init",
-    "prod": "tsc && node dist/src/hola.js",
+    "prod": "tsc && node dist/src/app.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {

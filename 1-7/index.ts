@@ -184,3 +184,5 @@ elementos2.forEach(elemento => elementos_join.push(elemento))
 elementos_join = [...elementos1, ...elementos2]
 
 
+//como importar un archivo json
+// asignar a una variable

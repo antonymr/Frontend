@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(238, 235, 235);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.content{
+    width: 900px;
+}
+
+.option-button{
+    width: 60%;
+    background-color: white;
+}
+
+.card{
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+
+.new-character{
+    background-color: white;
+}
+
+.new-character h2{
+    text-align: center;
+}
+
+.content-form{
+    width: 60%;
+    margin: 0 auto;
+}
